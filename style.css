@@ -4,3 +4,10 @@ body{
     color: red;
     font-family: sans-serif;
 }
+h2{
+    color:black;
+}
+#scontiPensionati,
+#scontiMinorenni{
+    color:grey;
+}
