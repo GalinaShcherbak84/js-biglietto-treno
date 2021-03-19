@@ -4,10 +4,15 @@ if(isNaN(chilometri)){
     alert('Devi inserire un numero.');
     var chilometri = parseInt(prompt('Quanti chilometri devi percorrere?'));
 }
+
 console.log(chilometri);
 document.getElementById('numeroKm').innerHTML = "il numero di chilometri inserito: " + chilometri;
 //chiedere l'età
-var età = prompt('Quanti anni hai?');
+var età = parseInt(prompt('Quanti anni hai?'));
+if(isNaN(età)){
+    alert('Devi inserire un numero.');
+    var età = parseInt(prompt('Quanti anni hai?'));
+}
 console.log(età);
 document.getElementById('anni').innerHTML = "l'età inserita: " + età;
 //prezzo al chilometro
