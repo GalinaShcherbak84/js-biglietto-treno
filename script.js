@@ -7,9 +7,9 @@ var età = prompt('Quanti anni hai?');
 console.log(età);
 document.getElementById('anni').innerHTML = "l'età inserita: " + età;
 //prezzo al chilometro
+var prezzoKm = 0.21
 console.log(prezzoKm);
 //calcolo prezzo biglietto
-var prezzoKm = 0.21
 var sconto1 = 0.8
 var sconto2 = 0.6
 var risultato;
@@ -21,6 +21,7 @@ if (età < 18){
     document.getElementById('scontiPensionati').innerHTML = "è stato applicato lo sconto del 40% per i pensionati."
 }else {
     risultato = prezzoKm * chilometri 
+    document.getElementById('nienteSconto').innerHTML = "Non hai il diritto su nessun tipo di sconto."
 }
 var formatRisultato = risultato.toFixed(2);
 console.log(formatRisultato);
