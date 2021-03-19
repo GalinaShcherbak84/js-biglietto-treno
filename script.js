@@ -1,5 +1,9 @@
 //chiedere il numero di km
 var chilometri = parseInt(prompt('Quanti chilometri devi percorrere?'));
+if(isNaN(chilometri)){
+    alert('Devi inserire un numero.');
+    var chilometri = parseInt(prompt('Quanti chilometri devi percorrere?'));
+}
 console.log(chilometri);
 document.getElementById('numeroKm').innerHTML = "il numero di chilometri inserito: " + chilometri;
 //chiedere l'età
